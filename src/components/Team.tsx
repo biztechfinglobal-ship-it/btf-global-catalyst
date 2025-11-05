@@ -1,4 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import teamDeepak from "@/assets/team-deepak.jpg";
 import teamNeelam from "@/assets/team-neelam.jpg";
 import teamLiayan from "@/assets/team-liayan.jpg";
@@ -52,23 +59,39 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {team.map((member, index) => (
-            <Card key={index} className="overflow-hidden border-2 hover:border-primary/50 transition-smooth hover:shadow-glow group">
-              <div className="aspect-square overflow-hidden">
-                <img
-                  src={member.image}
-                  alt={`${member.name} - ${member.role}`}
-                  className="w-full h-full object-cover transform group-hover:scale-110 transition-smooth duration-500"
-                />
-              </div>
-              <CardContent className="p-6 text-center">
-                <h3 className="text-xl font-bold text-foreground mb-1">{member.name}</h3>
-                <p className="text-muted-foreground">{member.role}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full max-w-6xl mx-auto"
+        >
+          <CarouselContent>
+            {team.map((member, index) => (
+              <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
+                <div className="p-2">
+                  <Card className="overflow-hidden border-2 hover:shadow-glow transition-smooth">
+                    <CardContent className="p-0">
+                      <div className="aspect-square overflow-hidden">
+                        <img
+                          src={member.image}
+                          alt={`${member.name} - ${member.role}`}
+                          className="w-full h-full object-cover transition-transform hover:scale-110 duration-500"
+                        />
+                      </div>
+                      <div className="p-6 text-center">
+                        <h3 className="text-xl font-semibold text-foreground mb-2">{member.name}</h3>
+                        <p className="text-primary font-medium">{member.role}</p>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden md:flex" />
+          <CarouselNext className="hidden md:flex" />
+        </Carousel>
       </div>
     </section>
   );
