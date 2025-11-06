@@ -28,23 +28,23 @@ const Navigation = () => {
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 sm:h-20">
-          <a href="#home" className="text-xl sm:text-2xl font-bold gradient-primary bg-clip-text text-transparent">
+        <div className="flex items-center justify-between h-14 sm:h-16">
+          <a href="#home" className="text-lg sm:text-xl font-bold gradient-primary bg-clip-text text-transparent">
             BTF Global
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-foreground hover:text-primary transition-smooth font-medium"
+                className="text-foreground hover:text-primary transition-smooth font-medium text-sm lg:text-base"
               >
                 {link.name}
               </a>
             ))}
-            <Button variant="hero" size="sm">
+            <Button variant="hero" size="sm" className="text-sm">
               Get Started
             </Button>
           </div>
@@ -63,13 +63,13 @@ const Navigation = () => {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <div className="md:hidden bg-background/98 backdrop-blur-md border-t border-border">
-          <div className="container mx-auto px-4 py-4 space-y-3">
+          <div className="container mx-auto px-4 py-3 space-y-2">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
-                className="block py-2 text-foreground hover:text-primary transition-smooth font-medium"
+                className="block py-2 text-foreground hover:text-primary transition-smooth font-medium text-sm"
               >
                 {link.name}
               </a>
