@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
+import heroBg from "@/assets/hero-bg-vision.jpg";
 
 const Hero = () => {
   return (
@@ -23,8 +23,11 @@ const Hero = () => {
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-4 sm:mb-6 animate-fade-in leading-tight">
             Transforming Business Through Innovation
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
-            BTF Global drives reformation and idea creation in Business Education, Technology Support, and Financial Impact
+          <p className="text-base sm:text-lg md:text-xl text-primary-foreground/90 mb-3 sm:mb-4 max-w-2xl mx-auto px-2 font-semibold">
+            Our Vision
+          </p>
+          <p className="text-sm sm:text-base md:text-lg text-primary-foreground/80 mb-6 sm:mb-8 max-w-2xl mx-auto px-2">
+            Perform in the market of Business, Technology and Finance for reformation
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 sm:px-0">
             <Button variant="hero" size="lg" className="group w-full sm:w-auto text-sm sm:text-base">

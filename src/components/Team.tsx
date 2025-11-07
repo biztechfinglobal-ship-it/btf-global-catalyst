@@ -3,16 +3,28 @@ import { Card, CardContent } from "@/components/ui/card";
 const Team = () => {
   const team = [
     {
+      name: "Deepak Bansal",
+      role: "Founder and CEO",
+    },
+    {
+      name: "Liyana Bansal",
+      role: "Co-Founder and Strategic Growth Leader",
+    },
+    {
+      name: "Neelam Bansal",
+      role: "Operational Leader",
+    },
+    {
       name: "Pramod Bansal",
-      role: "Technology Lead",
+      role: "Technical Head and Operational Leader",
     },
     {
       name: "Shivam Taluja",
-      role: "Financial Advisor",
+      role: "Technical Lead and Operation Lead",
     },
     {
-      name: "Shivani Goyal",
-      role: "Operations Manager",
+      name: "Shivani Bansal",
+      role: "Business Planning and Digital Lead",
     },
   ];
 
@@ -28,17 +40,17 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 max-w-6xl mx-auto">
           {team.map((member, index) => (
             <Card key={index} className="border-2 hover:border-primary/50 transition-smooth hover:shadow-glow">
-              <CardContent className="p-6 sm:p-8 text-center">
-                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-gradient-primary mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-white text-2xl sm:text-3xl font-bold">
+              <CardContent className="p-5 sm:p-6 text-center">
+                <div className="w-16 h-16 sm:w-18 sm:h-18 rounded-full bg-gradient-primary mx-auto mb-3 flex items-center justify-center shadow-glow">
+                  <span className="text-white text-xl sm:text-2xl font-bold">
                     {member.name.split(' ').map(n => n[0]).join('')}
                   </span>
                 </div>
-                <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-2">{member.name}</h3>
-                <p className="text-primary font-medium text-sm sm:text-base">{member.role}</p>
+                <h3 className="text-base sm:text-lg font-bold text-foreground mb-2">{member.name}</h3>
+                <p className="text-primary font-medium text-xs sm:text-sm leading-relaxed">{member.role}</p>
               </CardContent>
             </Card>
           ))}

@@ -96,14 +96,14 @@ const Contact = () => {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8">
-            <Card className="border-2 overflow-hidden shadow-glow order-2 lg:order-1">
-              <CardContent className="p-0">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-start">
+            <Card className="border-2 overflow-hidden shadow-glow order-2 lg:order-1 h-full">
+              <CardContent className="p-0 h-full">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.8882195726383!2d76.6215!3d28.5667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM0JzAwLjEiTiA3NsKwMzcnMTcuNCJF!5e0!3m2!1sen!2sin!4v1234567890"
                   width="100%"
                   height="100%"
-                  style={{ border: 0, minHeight: '400px' }}
+                  style={{ border: 0, minHeight: '500px' }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -112,7 +112,7 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-2 shadow-glow order-1 lg:order-2">
+            <Card className="border-2 shadow-glow order-1 lg:order-2 h-full">
               <CardContent className="p-5 sm:p-6 md:p-7">
                 <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-5 sm:mb-6">Send us a Message</h3>
                 <form className="space-y-4" onSubmit={handleSubmit}>
