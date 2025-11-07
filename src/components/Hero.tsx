@@ -27,7 +27,7 @@ const Hero = () => {
             Our Vision
           </p>
           <p className="text-sm sm:text-base md:text-lg text-white/85 mb-6 sm:mb-8 max-w-2xl mx-auto px-2 drop-shadow-md">
-            Perform in the market of Business, Technology and Finance for reformation
+            Perform in the sector of innovation, technology, business growth, strategic thinking
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 sm:px-0">
             <Button variant="hero" size="lg" className="group w-full sm:w-auto text-sm sm:text-base">

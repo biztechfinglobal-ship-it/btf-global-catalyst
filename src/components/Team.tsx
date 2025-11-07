@@ -4,27 +4,27 @@ const Team = () => {
   const team = [
     {
       name: "Deepak Bansal",
-      role: "Founder and CEO",
+      role: "Founder, CEO & Business Consultant",
     },
     {
       name: "Liyana Bansal",
-      role: "Co-Founder and Strategic Growth Leader",
+      role: "Co-Founder & Strategic Lead",
     },
     {
       name: "Neelam Bansal",
-      role: "Operational Leader",
+      role: "Operational Lead",
     },
     {
       name: "Pramod Bansal",
-      role: "Technical Head and Operational Leader",
+      role: "Technical & Operational Lead",
     },
     {
       name: "Shivam Taluja",
-      role: "Technical Lead and Operation Lead",
+      role: "Technical & Operational Lead",
     },
     {
       name: "Shivani Bansal",
-      role: "Business Planning and Digital Lead",
+      role: "Planning & Digital Lead",
     },
   ];
 
@@ -40,17 +40,17 @@ const Team = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 max-w-6xl mx-auto">
           {team.map((member, index) => (
-            <Card key={index} className="border-2 hover:border-primary/50 transition-smooth hover:shadow-glow">
-              <CardContent className="p-5 sm:p-6 text-center">
-                <div className="w-16 h-16 sm:w-18 sm:h-18 rounded-full bg-gradient-primary mx-auto mb-3 flex items-center justify-center shadow-glow">
-                  <span className="text-white text-xl sm:text-2xl font-bold">
+            <Card key={index} className="border-2 hover:border-primary/50 transition-smooth hover:shadow-glow aspect-square">
+              <CardContent className="p-6 sm:p-8 h-full flex flex-col items-center justify-center text-center">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-gradient-primary mx-auto mb-4 flex items-center justify-center shadow-glow">
+                  <span className="text-white text-2xl sm:text-3xl font-bold">
                     {member.name.split(' ').map(n => n[0]).join('')}
                   </span>
                 </div>
-                <h3 className="text-base sm:text-lg font-bold text-foreground mb-2">{member.name}</h3>
-                <p className="text-primary font-medium text-xs sm:text-sm leading-relaxed">{member.role}</p>
+                <h3 className="text-lg sm:text-xl font-bold text-foreground mb-3">{member.name}</h3>
+                <p className="text-primary font-semibold text-sm sm:text-base leading-relaxed">{member.role}</p>
               </CardContent>
             </Card>
           ))}
