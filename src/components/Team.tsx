@@ -29,13 +29,13 @@ const Team = () => {
   ];
 
   return (
-    <section id="team" className="py-12 sm:py-16 lg:py-20 bg-secondary/30">
+    <section id="team" className="py-8 sm:py-12 lg:py-14 bg-secondary/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8 sm:mb-10">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3">
+        <div className="text-center mb-6 sm:mb-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-2">
             Our Team
           </h2>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
             Expert professionals dedicated to your success
           </p>
         </div>

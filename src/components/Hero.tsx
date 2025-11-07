@@ -4,7 +4,7 @@ import heroBg from "@/assets/hero-bg-business.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-[85vh] sm:min-h-screen flex items-center justify-center overflow-hidden pt-14 sm:pt-16">
+    <section id="home" className="relative min-h-[75vh] flex items-center justify-center overflow-hidden pt-14 sm:pt-16">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 z-0"
@@ -18,7 +18,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-8 sm:py-0">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-6 sm:py-0">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white/95 mb-4 sm:mb-6 animate-fade-in leading-tight drop-shadow-lg">
             Transforming Business Through Innovation
