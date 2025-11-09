@@ -10,12 +10,10 @@ import Autoplay from "embla-carousel-autoplay";
 
 const Partners = () => {
   const partners = [
-    { name: "Partner 1", logo: "https://via.placeholder.com/200x100/1e40af/ffffff?text=Partner+1" },
-    { name: "Partner 2", logo: "https://via.placeholder.com/200x100/0891b2/ffffff?text=Partner+2" },
-    { name: "Partner 3", logo: "https://via.placeholder.com/200x100/1e40af/ffffff?text=Partner+3" },
-    { name: "Partner 4", logo: "https://via.placeholder.com/200x100/0891b2/ffffff?text=Partner+4" },
-    { name: "Partner 5", logo: "https://via.placeholder.com/200x100/1e40af/ffffff?text=Partner+5" },
-    { name: "Partner 6", logo: "https://via.placeholder.com/200x100/0891b2/ffffff?text=Partner+6" },
+    { name: "Limart Online Shopping Store", logo: "https://via.placeholder.com/200x100/1e40af/ffffff?text=Limart" },
+    { name: "Shree Travels", logo: "https://via.placeholder.com/200x100/0891b2/ffffff?text=Shree+Travels" },
+    { name: "Pyaoo.com", logo: "https://via.placeholder.com/200x100/1e40af/ffffff?text=Pyaoo.com" },
+    { name: "Oldcar.com", logo: "https://via.placeholder.com/200x100/0891b2/ffffff?text=Oldcar.com" },
   ];
 
   return (
