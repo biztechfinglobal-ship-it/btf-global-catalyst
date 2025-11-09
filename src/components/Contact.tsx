@@ -100,7 +100,7 @@ const Contact = () => {
             <Card className="border-2 overflow-hidden shadow-glow order-2 lg:order-1 h-full">
               <CardContent className="p-0 h-full">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.8882195726383!2d76.6215!3d28.5667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM0JzAwLjEiTiA3NsKwMzcnMTcuNCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.0!2d76.6181048!3d28.1863301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d50055857ea2b%3A0x8a76ec7bef874838!2sSector%204%2C%20Rewari%2C%20Haryana%20123401!5e0!3m2!1sen!2sin!4v1234567890"
                   width="100%"
                   height="100%"
                   style={{ border: 0, minHeight: '500px' }}
