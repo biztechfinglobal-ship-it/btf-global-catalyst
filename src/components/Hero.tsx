@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroBg from "@/assets/hero-bg-indian.jpg";
+import heroBg from "@/assets/hero-bg-india-tech.jpg";
 
 const Hero = () => {
   return (
@@ -14,7 +14,7 @@ const Hero = () => {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-white/40"></div>
+        <div className="absolute inset-0 bg-white/75"></div>
       </div>
 
       {/* Content */}

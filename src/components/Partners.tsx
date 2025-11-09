@@ -10,10 +10,16 @@ import Autoplay from "embla-carousel-autoplay";
 
 const Partners = () => {
   const partners = [
-    { name: "Limart Online Shopping Store", logo: "https://via.placeholder.com/200x100/1e40af/ffffff?text=Limart" },
-    { name: "Shree Travels", logo: "https://via.placeholder.com/200x100/0891b2/ffffff?text=Shree+Travels" },
-    { name: "Pyaoo.com", logo: "https://via.placeholder.com/200x100/1e40af/ffffff?text=Pyaoo.com" },
-    { name: "Oldcar.com", logo: "https://via.placeholder.com/200x100/0891b2/ffffff?text=Oldcar.com" },
+    { name: "Limart Online Shopping Store", logo: "https://via.placeholder.com/200x100/FF6B35/ffffff?text=Limart" },
+    { name: "Shree Travels", logo: "https://via.placeholder.com/200x100/004E89/ffffff?text=Shree+Travels" },
+    { name: "Pyaoo.com", logo: "https://via.placeholder.com/200x100/F77F00/ffffff?text=Pyaoo.com" },
+    { name: "Oldcar.com", logo: "https://via.placeholder.com/200x100/06A77D/ffffff?text=Oldcar.com" },
+    { name: "TechHub India", logo: "https://via.placeholder.com/200x100/9D4EDD/ffffff?text=TechHub" },
+    { name: "Finance Pro", logo: "https://via.placeholder.com/200x100/D62828/ffffff?text=Finance+Pro" },
+    { name: "Smart Business", logo: "https://via.placeholder.com/200x100/0077B6/ffffff?text=Smart+Biz" },
+    { name: "Digital Solutions", logo: "https://via.placeholder.com/200x100/06A77D/ffffff?text=Digital+Sol" },
+    { name: "Innovation Labs", logo: "https://via.placeholder.com/200x100/FF6B35/ffffff?text=Innovation" },
+    { name: "Global Trade", logo: "https://via.placeholder.com/200x100/004E89/ffffff?text=Global+Trade" },
   ];
 
   return (
