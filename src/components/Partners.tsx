@@ -7,29 +7,35 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import logoLimart from "@/assets/logo-limart.png";
+import logoShreeTravels from "@/assets/logo-shree-travels.png";
+import logoPyaoo from "@/assets/logo-pyaoo.png";
+import logoOldcar from "@/assets/logo-oldcar.png";
+import logoTechhub from "@/assets/logo-techhub.png";
+import logoFinancepro from "@/assets/logo-financepro.png";
 
 const Partners = () => {
   const partners = [
-    { name: "Limart Online Shopping Store", logo: "https://via.placeholder.com/200x100/FF6B35/ffffff?text=Limart" },
-    { name: "Shree Travels", logo: "https://via.placeholder.com/200x100/004E89/ffffff?text=Shree+Travels" },
-    { name: "Pyaoo.com", logo: "https://via.placeholder.com/200x100/F77F00/ffffff?text=Pyaoo.com" },
-    { name: "Oldcar.com", logo: "https://via.placeholder.com/200x100/06A77D/ffffff?text=Oldcar.com" },
-    { name: "TechHub India", logo: "https://via.placeholder.com/200x100/9D4EDD/ffffff?text=TechHub" },
-    { name: "Finance Pro", logo: "https://via.placeholder.com/200x100/D62828/ffffff?text=Finance+Pro" },
-    { name: "Smart Business", logo: "https://via.placeholder.com/200x100/0077B6/ffffff?text=Smart+Biz" },
-    { name: "Digital Solutions", logo: "https://via.placeholder.com/200x100/06A77D/ffffff?text=Digital+Sol" },
-    { name: "Innovation Labs", logo: "https://via.placeholder.com/200x100/FF6B35/ffffff?text=Innovation" },
-    { name: "Global Trade", logo: "https://via.placeholder.com/200x100/004E89/ffffff?text=Global+Trade" },
+    { name: "Limart Online Shopping Store", logo: logoLimart },
+    { name: "Shree Travels", logo: logoShreeTravels },
+    { name: "Pyaoo.com", logo: logoPyaoo },
+    { name: "Oldcar.com", logo: logoOldcar },
+    { name: "TechHub India", logo: logoTechhub },
+    { name: "Finance Pro", logo: logoFinancepro },
+    { name: "Smart Business", logo: "https://via.placeholder.com/1024x512/0077B6/ffffff?text=Smart+Business" },
+    { name: "Digital Solutions", logo: "https://via.placeholder.com/1024x512/06A77D/ffffff?text=Digital+Solutions" },
+    { name: "Innovation Labs", logo: "https://via.placeholder.com/1024x512/FF6B35/ffffff?text=Innovation+Labs" },
+    { name: "Global Trade", logo: "https://via.placeholder.com/1024x512/004E89/ffffff?text=Global+Trade" },
   ];
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-background">
+    <section className="py-8 sm:py-12 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-3">
+        <div className="text-center mb-6 sm:mb-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-2 sm:mb-3">
             Our Partners
           </h2>
-          <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto px-4">
+          <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto px-4">
             Trusted by leading organizations worldwide
           </p>
         </div>
@@ -46,23 +52,29 @@ const Partners = () => {
           ]}
           className="w-full max-w-6xl mx-auto"
         >
-          <CarouselContent className="-ml-2 md:-ml-3">
+          <CarouselContent className="-ml-2 md:-ml-4">
             {partners.map((partner, index) => (
-              <CarouselItem key={index} className="pl-2 md:pl-3 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
-                <Card className="border-2 hover:border-primary/50 transition-smooth h-full">
-                  <CardContent className="flex aspect-video items-center justify-center p-4 sm:p-5">
-                    <img
-                      src={partner.logo}
-                      alt={partner.name}
-                      className="w-full h-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                    />
-                  </CardContent>
-                </Card>
+              <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
+                <div className="group cursor-pointer">
+                  <Card className="border-2 border-border hover:border-primary/50 transition-smooth h-full overflow-hidden hover:shadow-glow">
+                    <CardContent className="flex aspect-video items-center justify-center p-4 sm:p-5 bg-card relative">
+                      <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/0 to-primary/5 opacity-0 group-hover:opacity-100 transition-smooth"></div>
+                      <img
+                        src={partner.logo}
+                        alt={partner.name}
+                        className="w-full h-full object-contain grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110 relative z-10"
+                      />
+                    </CardContent>
+                  </Card>
+                  <p className="text-xs text-center mt-2 text-muted-foreground group-hover:text-foreground transition-smooth opacity-0 group-hover:opacity-100">
+                    {partner.name}
+                  </p>
+                </div>
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="hidden md:flex" />
-          <CarouselNext className="hidden md:flex" />
+          <CarouselPrevious className="hidden md:flex -left-8 lg:-left-12" />
+          <CarouselNext className="hidden md:flex -right-8 lg:-right-12" />
         </Carousel>
       </div>
     </section>
