@@ -4,7 +4,7 @@ import heroBg from "@/assets/hero-bg-india-tech.jpg";
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-[75vh] flex items-center justify-center overflow-hidden pt-14 sm:pt-16">
+    <section id="home" className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-16 sm:pt-20">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 z-0"
@@ -14,35 +14,35 @@ const Hero = () => {
           backgroundPosition: 'center',
         }}
       >
-        <div className="absolute inset-0 bg-white/75"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-background/95 via-background/90 to-primary/20"></div>
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-6 sm:py-0">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-8 sm:py-12">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-6 animate-fade-in leading-tight drop-shadow-sm">
-            Transforming Business Through Innovation
+          <div className="inline-block mb-4 px-4 py-1.5 bg-primary/10 rounded-full border border-primary/20 animate-fade-in">
+            <p className="text-xs sm:text-sm text-primary font-semibold">LiayanaWap BizCorp</p>
+          </div>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-5 animate-fade-up leading-tight">
+            Transforming Business Through <span className="bg-clip-text text-transparent gradient-primary">Innovation</span>
           </h1>
-          <p className="text-base sm:text-lg md:text-xl text-foreground mb-3 sm:mb-4 max-w-2xl mx-auto px-2 font-semibold drop-shadow-sm">
-            Our Vision
+          <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto animate-fade-in leading-relaxed">
+            Leading in innovation, technology, business growth, and strategic thinking
           </p>
-          <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto px-2 drop-shadow-sm">
-            Perform in the sector of innovation, technology, business growth, strategic thinking
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 sm:px-0">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 sm:px-0 animate-scale-in">
             <Button 
               variant="hero" 
               size="lg" 
-              className="group w-full sm:w-auto text-sm sm:text-base"
+              className="group w-full sm:w-auto shadow-glow hover:shadow-accent transition-all"
               onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Explore Services
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-smooth" size={18} />
+              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-bounce" size={18} />
             </Button>
             <Button 
               variant="outline" 
               size="lg" 
-              className="w-full sm:w-auto text-sm sm:text-base"
+              className="w-full sm:w-auto hover-lift border-2"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Contact Us
@@ -52,7 +52,7 @@ const Hero = () => {
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute bottom-0 left-0 right-0 h-20 sm:h-32 bg-gradient-to-t from-background to-transparent z-10"></div>
+      <div className="absolute bottom-0 left-0 right-0 h-16 sm:h-24 bg-gradient-to-t from-background to-transparent z-10"></div>
     </section>
   );
 };

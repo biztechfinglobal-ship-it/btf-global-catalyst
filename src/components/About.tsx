@@ -3,50 +3,49 @@ import { Lightbulb, UsersRound } from "lucide-react";
 
 const About = () => {
   return (
-    <section id="about" className="py-8 sm:py-10 bg-background">
+    <section id="about" className="py-10 sm:py-14 bg-gradient-to-b from-background to-secondary/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-6 sm:mb-8">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-2">
-            About Us
+        <div className="text-center mb-8 sm:mb-10">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-3 animate-fade-up">
+            About <span className="bg-clip-text text-transparent gradient-primary">BTF Global</span>
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
             Driving transformation in Business, Technology, and Finance
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 max-w-5xl mx-auto">
-          <Card className="border-2 hover:border-primary/50 transition-smooth hover:shadow-glow">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 max-w-5xl mx-auto">
+          <Card className="border-2 hover:border-primary/50 transition-smooth hover-lift shadow-soft group">
             <CardContent className="p-5 sm:p-6">
               <div className="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">
-                <div className="p-2 sm:p-3 rounded-lg bg-primary/10">
-                  <Lightbulb className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+                <div className="p-2.5 sm:p-3 rounded-xl bg-gradient-primary shadow-glow group-hover:scale-110 transition-bounce">
+                  <Lightbulb className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground mt-1">Our Vision</h3>
               </div>
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                Perform in the sector of innovation, technology, business growth, and strategic thinking. 
-                We aim to transform businesses through cutting-edge solutions in Business, Technology, and Finance.
+                Leading in innovation, technology, business growth, and strategic thinking. 
+                We transform businesses through cutting-edge solutions in Business, Technology, and Finance.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="border-2 hover:border-primary/50 transition-smooth hover:shadow-glow">
+          <Card className="border-2 hover:border-primary/50 transition-smooth hover-lift shadow-soft group">
             <CardContent className="p-5 sm:p-6">
               <div className="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">
-                <div className="p-2 sm:p-3 rounded-lg bg-primary/10">
-                  <UsersRound className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+                <div className="p-2.5 sm:p-3 rounded-xl bg-gradient-accent shadow-accent group-hover:scale-110 transition-bounce">
+                  <UsersRound className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold text-foreground mt-1">Our Team</h3>
+                <h3 className="text-lg sm:text-xl font-bold text-foreground mt-1">Our Expertise</h3>
               </div>
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-3">
-                Led by experienced professionals with expertise across multiple domains:
+                Expert team delivering comprehensive solutions:
               </p>
               <ul className="space-y-1.5 text-xs sm:text-sm text-muted-foreground">
-                <li>• Business Education & Consulting</li>
-                <li>• Technology & AI Solutions</li>
-                <li>• Financial Services & Planning</li>
-                <li>• Strategic Development & Operations</li>
-                <li>• Digital Transformation</li>
+                <li className="flex items-center gap-2"><span className="text-primary">✓</span> Business Education & Consulting</li>
+                <li className="flex items-center gap-2"><span className="text-primary">✓</span> Technology & AI Solutions</li>
+                <li className="flex items-center gap-2"><span className="text-primary">✓</span> Financial Services & Planning</li>
+                <li className="flex items-center gap-2"><span className="text-primary">✓</span> Strategic Development</li>
               </ul>
             </CardContent>
           </Card>
