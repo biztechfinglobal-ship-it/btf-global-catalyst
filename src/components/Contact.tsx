@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Mail, MessageCircle } from "lucide-react";
+import { MapPinned, PhoneCall, AtSign, MessageSquareMore } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -42,25 +42,25 @@ const Contact = () => {
   };
   const contactInfo = [
     {
-      icon: <MapPin className="w-6 h-6 text-primary" />,
+      icon: <MapPinned className="w-6 h-6 text-primary" />,
       title: "Office Address",
       content: "Sector 4, Rewari, Haryana 123401",
       action: () => window.open("https://maps.google.com/?q=Sector+4+Rewari+Haryana+123401", "_blank"),
     },
     {
-      icon: <Phone className="w-6 h-6 text-primary" />,
+      icon: <PhoneCall className="w-6 h-6 text-primary" />,
       title: "Phone",
       content: "+91 9990131102",
       action: () => window.location.href = "tel:+919990131102",
     },
     {
-      icon: <MessageCircle className="w-6 h-6 text-primary" />,
+      icon: <MessageSquareMore className="w-6 h-6 text-primary" />,
       title: "WhatsApp",
       content: "+91 9990131102",
       action: () => window.open("https://wa.me/919990131102", "_blank"),
     },
     {
-      icon: <Mail className="w-6 h-6 text-primary" />,
+      icon: <AtSign className="w-6 h-6 text-primary" />,
       title: "Email",
       content: "biztechfin.global@gmail.com",
       action: () => window.location.href = "mailto:biztechfin.global@gmail.com",
