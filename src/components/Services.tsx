@@ -1,10 +1,10 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { GraduationCap, Laptop, TrendingUp } from "lucide-react";
+import { Briefcase, Cpu, TrendingUp } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: <GraduationCap className="w-12 h-12 text-primary" />,
+      icon: <Briefcase className="w-12 h-12 text-primary" />,
       title: "Business Education",
       description: "Comprehensive training programs and workshops designed to elevate business acumen and leadership skills.",
       subServices: [
@@ -15,7 +15,7 @@ const Services = () => {
       ]
     },
     {
-      icon: <Laptop className="w-12 h-12 text-primary" />,
+      icon: <Cpu className="w-12 h-12 text-primary" />,
       title: "Technology Support",
       description: "Cutting-edge technological solutions and IT infrastructure to streamline operations and drive digital transformation.",
       subServices: [

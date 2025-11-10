@@ -30,11 +30,21 @@ const Hero = () => {
             Perform in the sector of innovation, technology, business growth, strategic thinking
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 sm:px-0">
-            <Button variant="hero" size="lg" className="group w-full sm:w-auto text-sm sm:text-base">
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="group w-full sm:w-auto text-sm sm:text-base"
+              onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Explore Services
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-smooth" size={18} />
             </Button>
-            <Button variant="outline" size="lg" className="w-full sm:w-auto text-sm sm:text-base">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="w-full sm:w-auto text-sm sm:text-base"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               Contact Us
             </Button>
           </div>

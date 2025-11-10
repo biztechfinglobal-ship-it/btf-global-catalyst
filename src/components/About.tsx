@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Target, Users } from "lucide-react";
+import { Lightbulb, UsersRound } from "lucide-react";
 
 const About = () => {
   return (
@@ -19,7 +19,7 @@ const About = () => {
             <CardContent className="p-5 sm:p-6">
               <div className="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">
                 <div className="p-2 sm:p-3 rounded-lg bg-primary/10">
-                  <Target className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+                  <Lightbulb className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground mt-1">Our Vision</h3>
               </div>
@@ -34,7 +34,7 @@ const About = () => {
             <CardContent className="p-5 sm:p-6">
               <div className="flex items-start gap-3 sm:gap-4 mb-3 sm:mb-4">
                 <div className="p-2 sm:p-3 rounded-lg bg-primary/10">
-                  <Users className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
+                  <UsersRound className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold text-foreground mt-1">Our Team</h3>
               </div>

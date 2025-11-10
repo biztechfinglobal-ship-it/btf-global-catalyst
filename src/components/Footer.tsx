@@ -5,8 +5,8 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
           <div className="text-center md:text-left">
             <h3 className="text-xl sm:text-2xl font-bold mb-1">BTF Global</h3>
-            <p className="text-primary-foreground/70 text-[10px] sm:text-xs italic">
-              A Unit of LiayanaWap Corp.
+            <p className="text-primary-foreground/70 text-[10px] sm:text-xs">
+              A Unit of LiayanaWap BizCorp.
             </p>
           </div>
           
