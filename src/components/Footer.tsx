@@ -6,7 +6,7 @@ const Footer = () => {
           <div className="text-center md:text-left">
             <h3 className="text-xl sm:text-2xl font-bold mb-1">BTF Global</h3>
             <p className="text-primary-foreground/70 text-xs sm:text-sm">
-              LiayanaWap BizCorp
+              A unit of LiayanaWap BizCorp
             </p>
           </div>
           

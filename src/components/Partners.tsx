@@ -13,6 +13,10 @@ import logoPyaoo from "@/assets/logo-pyaoo.png";
 import logoOldcar from "@/assets/logo-oldcar.png";
 import logoTechhub from "@/assets/logo-techhub.png";
 import logoFinancepro from "@/assets/logo-financepro.png";
+import logoSmartBusiness from "@/assets/logo-smart-business.png";
+import logoDigitalSolutions from "@/assets/logo-digital-solutions.png";
+import logoInnovationLabs from "@/assets/logo-innovation-labs.png";
+import logoGlobalTrade from "@/assets/logo-global-trade.png";
 
 const Partners = () => {
   const partners = [
@@ -22,10 +26,10 @@ const Partners = () => {
     { name: "Oldcar.com", logo: logoOldcar },
     { name: "TechHub India", logo: logoTechhub },
     { name: "Finance Pro", logo: logoFinancepro },
-    { name: "Smart Business", logo: "https://via.placeholder.com/1024x512/0077B6/ffffff?text=Smart+Business" },
-    { name: "Digital Solutions", logo: "https://via.placeholder.com/1024x512/06A77D/ffffff?text=Digital+Solutions" },
-    { name: "Innovation Labs", logo: "https://via.placeholder.com/1024x512/FF6B35/ffffff?text=Innovation+Labs" },
-    { name: "Global Trade", logo: "https://via.placeholder.com/1024x512/004E89/ffffff?text=Global+Trade" },
+    { name: "Smart Business", logo: logoSmartBusiness },
+    { name: "Digital Solutions", logo: logoDigitalSolutions },
+    { name: "Innovation Labs", logo: logoInnovationLabs },
+    { name: "Global Trade", logo: logoGlobalTrade },
   ];
 
   return (
