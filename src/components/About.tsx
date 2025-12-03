@@ -10,7 +10,7 @@ const About = () => {
             About <span className="text-primary">BTF Global</span>
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
-            Driving transformation in Business, Technology, and Finance
+            A pure service-based company specializing in Business, Technology, and Finance solutions
           </p>
         </div>
 
@@ -24,8 +24,8 @@ const About = () => {
                 <h3 className="text-lg sm:text-xl font-bold text-foreground mt-1">Our Vision</h3>
               </div>
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
-                Leading in innovation, technology, business growth, and strategic thinking. 
-                We transform businesses through cutting-edge solutions in Business, Technology, and Finance.
+                To be the most trusted service partner for businesses seeking excellence in consulting, 
+                technology integration, and financial advisory services across industries.
               </p>
             </CardContent>
           </Card>
@@ -39,13 +39,13 @@ const About = () => {
                 <h3 className="text-lg sm:text-xl font-bold text-foreground mt-1">Our Expertise</h3>
               </div>
               <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-3">
-                Expert team delivering comprehensive solutions:
+                Our expert team delivers end-to-end service solutions:
               </p>
               <ul className="space-y-1.5 text-xs sm:text-sm text-muted-foreground">
-                <li className="flex items-center gap-2"><span className="text-primary">✓</span> Business Education & Consulting</li>
-                <li className="flex items-center gap-2"><span className="text-primary">✓</span> Technology & AI Solutions</li>
-                <li className="flex items-center gap-2"><span className="text-primary">✓</span> Financial Services & Planning</li>
-                <li className="flex items-center gap-2"><span className="text-primary">✓</span> Strategic Development</li>
+                <li className="flex items-center gap-2"><span className="text-primary">✓</span> Business Consulting & Strategy</li>
+                <li className="flex items-center gap-2"><span className="text-primary">✓</span> Technology Services & Support</li>
+                <li className="flex items-center gap-2"><span className="text-primary">✓</span> Financial Advisory & Planning</li>
+                <li className="flex items-center gap-2"><span className="text-primary">✓</span> End-to-End Service Delivery</li>
               </ul>
             </CardContent>
           </Card>

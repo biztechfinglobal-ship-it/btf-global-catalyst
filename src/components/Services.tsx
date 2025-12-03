@@ -5,35 +5,35 @@ const Services = () => {
   const services = [
     {
       icon: <Briefcase className="w-12 h-12 text-primary" />,
-      title: "Business Education",
-      description: "Comprehensive training programs and workshops designed to elevate business acumen and leadership skills.",
+      title: "Business Services",
+      description: "Expert business consulting and advisory services to help organizations grow, optimize operations, and achieve strategic goals.",
       subServices: [
-        "Corporate Training Programs",
-        "Leadership Development",
-        "Strategic Business Planning",
-        "Workshop & Seminars"
+        "Business Strategy Consulting",
+        "Operations & Process Optimization",
+        "Market Research & Analysis",
+        "Corporate Training & Development"
       ]
     },
     {
       icon: <Cpu className="w-12 h-12 text-primary" />,
-      title: "Technology Support",
-      description: "Cutting-edge technological solutions and IT infrastructure to streamline operations and drive digital transformation.",
+      title: "Technology Services",
+      description: "Comprehensive technology solutions including IT consulting, digital transformation, and software services to modernize your business.",
       subServices: [
-        "IT Infrastructure & Support",
-        "Digital Transformation",
-        "AI & Automation Solutions",
-        "Cloud Integration"
+        "IT Consulting & Support",
+        "Software Development Services",
+        "Digital Transformation Solutions",
+        "Cloud & Infrastructure Services"
       ]
     },
     {
       icon: <TrendingUp className="w-12 h-12 text-primary" />,
-      title: "Financial Impact",
-      description: "Strategic financial consulting and planning services to optimize growth, maximize ROI, and ensure business success.",
+      title: "Finance Services",
+      description: "Professional financial advisory and planning services to help businesses manage finances, optimize cash flow, and drive profitability.",
       subServices: [
-        "Financial Planning & Analysis",
-        "Investment Strategy",
-        "Risk Management",
-        "Business Valuation"
+        "Financial Advisory & Planning",
+        "Accounting & Bookkeeping Services",
+        "Tax Consulting & Compliance",
+        "Investment & Wealth Advisory"
       ]
     },
   ];
@@ -46,7 +46,7 @@ const Services = () => {
             Our <span className="text-primary">Services</span>
           </h2>
           <p className="text-sm sm:text-base text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive solutions tailored to drive your business forward
+            Professional service solutions in Business, Technology, and Finance tailored to your needs
           </p>
         </div>
 
