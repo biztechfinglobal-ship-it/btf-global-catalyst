@@ -24,10 +24,10 @@ const Hero = () => {
             <p className="text-xs sm:text-sm text-primary font-semibold">LiayanaWap BizCorp</p>
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-5 animate-fade-up leading-tight">
-            Transforming Business Through <span className="text-primary">Innovation</span>
+            Your Trusted Partner in <span className="text-primary">Business, Technology & Finance</span>
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-6 sm:mb-8 max-w-2xl mx-auto animate-fade-in leading-relaxed">
-            Leading in innovation, technology, business growth, and strategic thinking
+            A pure service-based company delivering expert solutions in Business Consulting, Technology Services, and Financial Advisory
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4 sm:px-0 animate-scale-in">
             <Button 
