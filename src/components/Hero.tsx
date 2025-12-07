@@ -20,9 +20,6 @@ const Hero = () => {
       {/* Content */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-8 sm:py-12">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-block mb-4 px-4 py-1.5 bg-primary/10 rounded-full border border-primary/20 animate-fade-in">
-            <p className="text-xs sm:text-sm text-primary font-semibold">LiayanaWap BizCorp</p>
-          </div>
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-4 sm:mb-5 animate-fade-up leading-tight">
             Your Trusted Partner in <span className="text-primary">Business, Technology & Finance</span>
           </h1>
